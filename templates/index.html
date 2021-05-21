@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            body
+	{
+				background-color: rgb(0,0,0,0.5);
+				 background-image: url('/static/liver7.jpg');
+				background-repeat:no-repeat;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-size: 100%;
+
+	}
+        </style>
+        <meta charset="UTF-8">
+        <title> Index </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">                     
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">LogoutPage</h1>
+             </div></br></br></br>
+                <h1 class="bottom">
+                     {{session.username}}</br></br> Thanks for using this Application
+                </h1></br></br></br>
+                <a href="{{ url_for('admin') }}" class="btn">Logout</a>
+          </div>
+        </div>
+    </body>
+</html>

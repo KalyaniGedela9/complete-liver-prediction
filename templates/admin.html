@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<i-- <marquee scrollamount="20" direction="right" class="marq"><h2></h2></marquee>
+	<title>Login Page</title>
+<style type="text/css">
+	        body{
+padding:100px;
+	        	background-size: cover;
+	        }
+.container{
+			border: 1px solid white;
+			width: 40%;
+			/*margin: 15px 10px 40px;*/
+			font-family: sans-serif;
+			padding: 5px;
+			/*background-color: EEF7F5;*/
+			color: white;
+			/*border: none;*/
+		}
+		input {
+			width: 90%;
+			padding: 5px;
+			background-color: eff7f5;
+			/*border: none;*/
+			border-radius: 5px;
+			margin:5px 0 20px 0;
+		}
+		.save {
+			background-color: green;
+			width: 20%;
+			margin-top: 10px;
+			margin-left: 10%;
+			color: #fff;
+		}
+		.save1 {
+			background-color: green;
+			width: 20%;
+			margin-top: 10px;
+			margin-left: 10%;
+			color: #fff;
+		}
+		.marq{
+		padding-top:2px;
+		padding-bottom:10px;
+		}
+</style>
+</head>
+<body style="background-image: url('../static/dusk.jpg');">
+
+<center>
+		<h1>ADMIN BLOCK</h1>
+<form action="{{url_for('admin')}}">
+	<center class="container">
+		<a href="{{url_for('login')}}">
+			<label><input type="button" size="30px" value="Nurse/Doctor" class="save1" style="text-align: center;"></input></label>
+		</a>
+		<a href="{{url_for('patient2')}}">
+			<label><input type="button" value="I'm Patient" class="save" onclick="href="patient.html""></input></label>
+		</a>
+	</center>
+	</center>
+</form><br><br><br><br>
+	<fieldset>
+	<h3 style="color:red"><legend style="float:leftt">NOTE:</legend></h3>
+	<h2>
+		<ul><li>"Nurse/Doctor" module is providing the security as well as the your data will be stored for further verification </li><br>
+		<li>"Patient" module does not provide any security and data cannot be stored for further verification</li>
+</ul>
+	</h2>
+	</fieldset>
+</div>
+</body>
+</html>

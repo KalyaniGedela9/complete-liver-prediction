@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Liver Disease Predictor</title>
+		<link rel="shortcut icon" href="/static/diabetes-favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/static/styles.css">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<style type="text/css">
+			body{
+				background-color: rgb(0,0,0,0.5);
+				background-image: url('/static/liver7.jpg');
+				background-repeat:no-repeat;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-size: 100%;
+			}
+			.login { 
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin: -200px ;
+	width:550px;
+	height:90%;
+}
+footer {
+  font-size:10px
+  text-align: center;
+  padding: 550px;
+  color: white;
+}
+nav{
+position: relative;
+padding: 10px 20px 10px 10px;
+text-align: right;
+z-index: 1;
+background:;
+margin: 0 auto;
+width: 100%;
+}
+
+		</style>
+	</head>
+	<center>
+
+    <body>
+	<nav>
+	<h2> <a class="bottom" href="https://www.thefitindian.com/blog/natural-home-remedies-for-liver-disease/">For more info</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="bottom" href="{{url_for('Home')}}">Home</a></h2>
+	</nav>
+        <div class="login">
+        <!-- Website Title -->
+		<div class="container" align="center">
+		
+		<h2 class='container-heading'><span class="heading_font" style="color: orange;font-size: 50px">Liver Disease Prediction</span></h2>
+            <div class='description' align="center">
+    			<marquee><p style="color: orange;font-size: 30px">A Machine Learning Web App, Built with Flask Framework</p></marquee>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results" align="center">
+			
+				<h1 style="color:Blue">Prediction:
+				<span class='safe' style="color: white">Great!You have less chances to have a Disease.
+				But,Don't decided he or she may not get liver disease in future.</span></h1>
+				<img src="/static/happy.gif" height="350" width="400" class="gif" alt="happyness image">
+			
+			
+		</div>
+</div>
+</body>
+	</center>
+</html>
